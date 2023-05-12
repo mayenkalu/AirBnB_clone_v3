@@ -97,4 +97,3 @@ class DBStorage:
         if cls in name2class.values():
             new_cnt = self.all(cls)
         return len(new_cnt)
-    
