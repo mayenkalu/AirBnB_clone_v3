@@ -82,7 +82,7 @@ class FileStorage:
         count = 0
         if cls:
             for key, obj in objects.items():
-                if obj.__class__.__name__ == cls.__name__:
+                if isinstance(obj, FileStorage):
                     count += 1
         else:
             for obj in objects.values():
