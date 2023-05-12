@@ -90,7 +90,7 @@ class DBStorage:
             for item, value in objs.items():
                 if value.id == id:
                     return value
-        
+
     def count(self, cls=None):
         """A method to count the number of objects in storage"""
         new_cnt = self.all(cls)
